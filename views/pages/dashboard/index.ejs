@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="utf-8">
+   <title>CatLogs – Dashboard</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="The best password recovery tool">
+   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+   <meta name="googlebot" content="noindex">
+   <meta name="googlebot-news" content="nosnippet">
+   <link rel="stylesheet" href="../../assets/style.css">
+   <link rel="stylesheet" href="../../assets/boxicons.css">
+   <script src="../../assets/jquery.js"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+   <div class="sidebar">
+      <div class="logo-details">
+         <img class="logo" src="../../assets/cat.png" alt="DuckLogs">
+         <span class="logo_name">CatLogs</span>
+      </div>
+      <ul class="nav-links">
+         <li>
+            <a href="/dashboard">
+               <i class="bx bx-grid-alt"></i>
+               <span class="link_name">Dashboard</span>
+            </a>
+            <ul class="sub-menu blank">
+               <li><a class="link_name" href="/dashboard">Dashboard</a></li>
+            </ul>
+         </li>
+         <li>
+            <div class="iocn-link">
+               <a href="/clients">
+                  <i class="bx bx-bug"></i>
+                  <span class="link_name">Infected</span>
+               </a>
+               <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+               <li><a class="link_name" href="/clients">Infected</a></li>
+               <li><a href="/clients">Clients</a></li>
+            </ul>
+         </li>
+         
+         <li>
+            <div class="iocn-link">
+               <a href="/builder">
+                  <i class="bx bx-wrench"></i>
+                  <span class="link_name">Build</span>
+               </a>
+               
+            </div>
+          
+         </li>
+         <li>
+            <a href="https://antiscan.me/" target="_blank">
+               <i class="bx bx-check-shield"></i>
+               <span class="link_name">Scanner</span>
+            </a>
+            <ul class="sub-menu blank">
+               <li><a class="link_name" href="https://antiscan.me/" target="_blank">Scanner</a></li>
+            </ul>
+         </li>
+         <li>
+            <div class="iocn-link">
+               <a href="/settings">
+                  <i class="bx bx-cog"></i>
+                  <span class="link_name">Settings</span>
+               </a>
+               <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+               <li><a class="link_name" href="/settings">Settings</a></li>
+               <li><a href="/settings">General</a></li>
+            </ul>
+         </li>
+         <li>
+         </li>
+        
+         <li>
+            <div class="profile-details">
+               <div class="profile-content">
+                  <img src="../../assets/Jason.png" alt="profileImg">
+               </div>
+               <div class="name-job">
+                  <div class="profile_name">Default</div>
+                  <div class="job">User</div>
+               </div>
+               <a href="/logout"><i class="bx bx-log-out"></i></a>
+            </div>
+         </li>
+      </ul>
+   </div>
+   
+   <script>setTimeout(function () { $(".topcorner").fadeOut("normal"); }, 1200);</script>
+   <div class="container" style="padding-top: 100px; max-width: 1160px;">
+      <div class="b-small">
+         <div class="stats">
+            <a>Total Infected</a>
+            <div class="num">
+               <a><%= infecteds %></a>
+            </div>
+            <div class="bot">
+               <a><i class="bx bx-up-arrow-circle" id="blue"></i> Up from yesterday</a>
+            </div>
+         </div>
+         <div class="icon blue">
+            <i class="bx bx-user" id="big"></i>
+         </div>
+      </div>
+      <div class="b-small">
+         <div class="stats">
+            <a>Today Keylogs</a>
+            <div class="num">
+               <a><%= strokes %></a>
+            </div>
+            <div class="bot">
+               <a><i class="bx bx-up-arrow-circle" id="red"></i> Up from yesterday</a>
+            </div>
+         </div>
+         <div class="icon red">
+            <i class="bx bxs-keyboard" id="big"></i>
+         </div>
+      </div>
+      <div class="b-small">
+         <div class="stats">
+            <a>Total Logs</a>
+            <div class="num">
+               <a><%= logs %></a>
+            </div>
+            <div class="bot">
+               <a><i class="bx bx-up-arrow-circle" id="green"></i> Up from yesterday</a>
+            </div>
+         </div>
+         <div class="icon green">
+            <i class="bx bx-bug" id="big"></i>
+         </div>
+      </div>
+      <div class="b-small">
+         <div class="stats">
+            <a>Total Builds</a>
+            <div class="num">
+               <a><%= builds %></a>
+            </div>
+            <div class="bot">
+               <a><i class="bx bx-up-arrow-circle" id="purple"></i> Up from yesterday</a>
+            </div>
+         </div>
+         <div class="icon purple">
+            <i class="bx bx-wrench" id="big"></i>
+         </div>
+      </div>
+      <div class="board">
+         <div class="b-dashboard">
+            <div class="head">
+               <a>Announcements</a>
+            </div>
+            <div class="news">
+               
+               <a class="newsTitle">✔️ Project Launch</a><br>
+               <a>
+                  - Unique Stub<br>
+                  - Anti-Analysis<br>
+                  - Latest Chromiums Support<br>
+                  - Addons (VPNs, Gaming Launchers, FTPs)<br>
+                  - Crypto Clipper<br>
+                  - Reduced stub size (Only 91kb)<br>
+                  - Reverse Shell and Other Controls</a><br><br>
+               11.09.2022<br><br>
+            </div>
+         </div>
+         <div class="b-stats">
+            <div class="head">
+               Staffs With The Most Victims
+            </div>
+            <center>
+               <div class="table" style="width: 465px;">
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td style="padding-left: 0px; padding-top: 5px;"><img src="../../assets/Jason.png"
+                                 id="pfp"></td>
+                           <td style="padding-left: 20px;">Jason</td>
+                           <td style="padding-left: 20px;">30</td>
+                        </tr>
+                        <tr>
+                           <td style="padding-left: 0px; padding-top: 5px;"><img src="../../assets/lucas.gif"
+                                 id="pfp"></td>
+                           <td style="padding-left: 20px;">Lucas</td>
+                           <td style="padding-left: 20px;">26</td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding-left: 0px; padding-top: 5px;"><img src="../../assets/Jocker.png"
+                                 id="pfp"></td>
+                           <td style="padding-left: 20px;">Jocker</td>
+                           <td style="padding-left: 20px;">23</td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding-left: 0px; padding-top: 5px;"><img src="../../assets/preaux.gif"
+                                 id="pfp"></td>
+                           <td style="padding-left: 20px;">Preaux</td>
+                           <td style="padding-left: 20px;">12</td>
+                        </tr>
+
+                        <tr>
+                           <td style="padding-left: 0px; padding-top: 5px;"><img src="../../assets/flores.png"
+                                 id="pfp"></td>
+                           <td style="padding-left: 20px;">Flor3s</td>
+                           <td style="padding-left: 20px;">4</td>
+                        </tr>
+                        
+                        
+                     </tbody>
+                  </table>
+               </div>
+            </center>
+         </div>
+      </div>
+   </div>
+   <script src="../../assets/sideBar.js"></script>
+</body>
+
+</html>

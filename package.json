@@ -1,0 +1,39 @@
+{
+  "name": "cp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.20.0",
+    "coingecko-api": "^1.0.10",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dateformat": "^5.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "geoip-lite": "^1.4.6",
+    "hwid": "^0.4.1",
+    "node-wmi": "^0.0.5",
+    "sqlite3": "^5.0.8"
+  },
+  "pkg": {
+    "scripts": [
+      "dao.js",
+      "auth.js",
+      "crypto.js"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

